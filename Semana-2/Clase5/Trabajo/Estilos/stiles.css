@@ -1,0 +1,71 @@
+header {
+  font-family: Arial;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 39px;
+
+  color: #2400ff;
+}
+.primer-parrafo {
+  width: 1357px;
+  height: 64px;
+  left: 30px;
+  top: 92px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+.segundo-parrafo {
+  width: 1357px;
+  height: 64px;
+  left: 30px;
+  top: 166px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+main ul li {
+  list-style: none;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+.derechos {
+  position: absolute;
+  width: 227px;
+  height: 18px;
+  left: 30px;
+  top: 836px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #2400ff;
+}
+.creado {
+  position: absolute;
+  width: 117px;
+  height: 18px;
+  left: 1201px;
+  top: 836px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #2400ff;
+}

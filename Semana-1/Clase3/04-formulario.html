@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario Login</h1>
+    <img src="" alt="" />
+    <!-- Para crear formulario en html existe la etiqueta FORM -->
+    <!-- action: es el lugar a donde va ir la informacion de mi formulario -->
+    <!-- post: es un tipo de protoco en el cual van a viajar mis datos -->
+    <!-- cuadno: tengamos un formulario que contenga datos sensibles este debe tener el nmethod="post" y en caso no method="get" -->
+    <form action="cate.com" method="post">
+        <!-- Para poder ponerle un titulo a mi formulario debo utilizar Fieldset y dentro le pongo legend -->
+        <fieldset>
+            <legend>Ingresa tus datos</legend>
+            <!-- Hagamos un formulario de tipo de Iniciar Sesion -->
+            <!-- correo, pasword y un boton para enviar datos -->
+            <!-- la etiqueta que se usa para crear cajas es Input -->
+            <!-- una propiedad de los inputs son los playçceholder -->
+            <!-- ademas los inputs tambien tienen tipos: texto, correo, numero, fechas, hora, color -->
+            <input name="email" placeholder="Ingrese un correo" required type="email" />
+            <!-- existe una etiqueta llamada br: nos da un salto de linea -->
+            <br />
+            <br />
+            <input name="password" placeholder="Ingrese una contraseña" required type="password" />
+            <br />
+            <br />
+            <input name="name" placeholder="Ingrese un nombre" required type="name" />
+            <br />
+            <br />
+            <!-- Para hacer un boton existen varias formas por ejemplo si quiero que se encarge de enviar los datos este boton debe ser de tipo "submit" -->
+            <button type="submit">Iniciar Sesion</button>
+        </fieldset>
+    </form>
+    <h1>Formulario de registro</h1>
+    <form>
+        <fieldset>
+            <legend>Registra tus datos</legend>
+            <!-- Quiero 
+        Nombre
+        Apellido
+        correo
+        Fecha de nacimiento
+        Password
+        Celular
+        Pais
+        Si esta de acuerdo con los terminos y condiciones -->
+            <!-- label: Es un texto que acompaña a nuestro input -->
+            <label for="nombre">Nombre</label>
+            <input 
+            id="nombre" 
+            required 
+            name="nombre" 
+            type="text" 
+            placeholder="Ingrese su nombre" 
+            autofocus
+            autocomplete="new-password">
+            <br />
+            <br />
+            <label for="apellido">Apellido</label>
+            <input 
+            id="apellido" 
+            required name="apellido" 
+            type="text" 
+            placeholder="Ingrese su apellido" />
+            <br />
+            <br />
+            <label for="correo">E-mail</label>
+            <input id="correo" 
+            required 
+            name="correo" 
+            placeholder="Ingrese un correo" 
+            type="email" />
+            <br />
+            <br />
+            <label for="fecha_nacimiento">Fecha Nacimiento</label>
+            <!-- input date tiene la opcion de poner min = 1990-01-01 y max = 2022-12-01, value permite poner un valor por default -->
+            <input 
+            id="fecha_nacimiento" 
+            name="fecha_nacimiento" 
+            type="date" 
+            min="1920-01-01" 
+            max="2022-12-01" 
+            value="2022-12-29" />
+            <br />
+            <br />
+            <label for="password">Password</label>
+            <input 
+            id="password" 
+            required 
+            name="password" 
+            placeholder="Ingrese un password" 
+            type="password" />
+            <br />
+            <br />
+            <label for="celular">Celular</label>
+            <!-- cuando pongo input de tipo number me abre del 0 al infnito -->
+            <!-- cuando pongo input de tipo number me abre del 0 al infnito, mas signo + -->
+            <input 
+            id="celular" 
+            required 
+            name="celular" 
+            placeholder="Ingrese numero celular" 
+            type="tel" 
+            maxlength="9" />
+            <br />
+            <br />
+            <!-- Cuando uno quiere buscar su pais se despliega una lista -->
+            <!-- Una lista desplegable se llama select, y el elemento de este select se llama option -->
+            <label for="pais">Pais</label>
+            <!-- <input
+          id="pais"
+          name="pais"
+          type="pais"
+        /> -->
+            <select id="pais" name="pais">
+                <option value="" disabled selected>Seleccione un pais</option>
+                <option value="Peru">Perú</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Chile">Chile</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+            <br />
+            <br />
+            <label for="terminos">
+                <!-- cuando input se de tipo checkbox o radiobutton este input se recomienda que debe estar dentro del label -->
+                <input id="terminos" required name="terminos" type="checkbox" /> Acepta los terminos y condiciones?
+            <br />
+            <br />
+            </label for="suscription_1">
+            <input 
+            id="suscription_1" required checked name="suscription " type="radio" /> Suscription 1
+            </label>
+
+            </label for="suscription_2">
+            <input id="suscription_2" required name="suscription " type="radio" /> Suscription 2
+            </label>
+
+            </label for="suscription_3">
+            <input id="suscription_3" required name="suscription " type="radio" /> Suscription 3
+            </label>
+            <br />
+            <br />
+            <label for="texto"></label>
+            <textarea id="texto" name="texto" placeholder="ingrese un texto sobre usted" rows="10" cols="50" maxlength="500" minlength="5">
+            </textarea>
+            <br />
+            <br />
+            <button type="submit">Registrarse</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
