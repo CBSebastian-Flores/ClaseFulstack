@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="GET">
+    <div>
+      <h2>Nombre</h2>
+      <input disabled value="sebastian" name="name" type="text" placeholder="Ingrese su nombre" required minleght="6"/>
+    </div>
+    <hr>
+    <div>
+      <h2>correo</h2>
+      <input readonly value="brunosebastianflores@gmail.com" name="correo" type="email" placeholder="Ingrese su correo"/>
+    </div>
+    <hr>
+    <div>
+      <h2>Edad</h2>
+      <input name="age" type="number" placeholder="Ingrese su edad" required/>
+    </div>
+    <hr>
+    <div>
+      <h2>Fecha de nacimiento</h2>
+      <input name="age" type="date" placeholder="Ingrese tu fecha de nacimiento" required/>
+    </div>
+    <hr>
+    <div>
+      <h2>Ingrese tu color favorito</h2>
+      <input name="age" type="color" placeholder="Ingrese su color favorito" required/>
+    </div>
+    <hr>
+    <div>
+      <h2>Ingrese su contraseño</h2>
+      <input name="contraseña" type="password" placeholder="Ingrese su password" required/>
+    </div>
+    <hr>
+    <div>
+      <h2>Ingrese un valor del 1 al 100</h2>
+      <input name="age" type="range"/>
+    </div>
+    <hr>
+    <div>
+      <h2>HOBBIES</h2>
+      <input id="futbol" type="checkbox" name="hobbies" value="futbol"/>
+      <label for="futbol">Futbol</label>
+      <input id="basketball" type="checkbox" name="hobbies" value="basketball"/>
+      <label for="basketball">basketball</label>
+    </div>
+    <hr>
+    <div>
+      <h2>Sexo</h2>
+      <input id="Masculino" type="radio" name="sexo" value="Masculino"/>
+      <label for="Masculino">Masculino</label>
+      <input id="Femenino" type="radio" name="sexo" value="Femenino"/>
+      <label for="Femenino">Femenino</label>
+    </div>
+    <hr>
+    <div>
+      <h2>Pais</h2>
+      <select name="country" required>
+        <option value="">Selecciona tu paso</option>
+        <option value="peru">Perú</option>
+        <option value="chile">Chile</option>
+        <option value="argentina">Argentina</option>
+        <option value="paraguay">Paraguay</option>
+      </select>
+    </div>
+    <hr>
+    <div>
+      <button>Enviar</button>
+    </div>
+  </form>
+</body>
+</html>
