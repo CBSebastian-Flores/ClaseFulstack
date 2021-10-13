@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .wrapper {
+      max-width: 440px;
+      background: red;
+      background: url(./img/startransparent.gif) red 0 0 no-repeat;
+      height: 300px;
+      padding: 20px;
+      /*padding: 20px 20px 20px 20px;
+      si es de esta forma es en sentido horario primero top despues sigue a la derecha*/
+      /*padding: 20px 20px;
+      si es de esta forma el primero cojeria arriba y abajo, y el segundo derecha e izquierda*/
+      margin: 0 auto 50px;
+      /* igual con el margin */
+      border: 10px solid orange;
+      /* en el border tambien ay un atajo rapido que es
+      border: grosor, tipo, color */
+      overflow-y: auto;
+      /*overflow: hiden, scroll y auto*/
+    }
+
+    h1 {
+      text-align: left;
+      /*left,right, center, justify */
+      visibility: visible;
+      /*visible - hidden*/
+    }
+
+    a {
+      display: none;
+      /*block, inline, none*/
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>TITULO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero minus velit rerum tenetur quod dolore
+      eveniet officiis asperiores, officia ipsum ipsa sit nesciunt nulla.</p>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem ipsum d.</p>
+      <a href="">link</a>
+      <a href="">link</a>
+    </div>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem ipsum d.</p>
+      <a href="">link</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <h1>TITULO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero minus velit rerum tenetur quod dolore
+      eveniet officiis asperiores, officia ipsum ipsa sit nesciunt nulla.</p>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem ipsum d.</p>
+      <a href="">link</a>
+      <a href="">link</a>
+    </div>
+    <div>
+      <h2>TITULO H2</h2>
+      <p>Lorem ipsum d.</p>
+      <a href="">link</a>
+    </div>
+  </div>
+</body>
+
+</html>
