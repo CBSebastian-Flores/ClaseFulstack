@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Grow</title>
+  <style>
+    .box{
+      width:400px;
+      background: pink;
+      display: flex;
+    }
+    .box div{
+      width: 100px;
+    }
+    .box div:nth-child(even){
+      background: yellow;
+    }
+    .box div:last-child{
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div>1</div>
+    <div>2</div>
+  </div>
+</body>
+</html>
