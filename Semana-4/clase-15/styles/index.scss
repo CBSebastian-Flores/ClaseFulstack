@@ -1,8 +1,23 @@
 $bg-color: #000;
+$bb-color-white: #ccc;
 $bg-div: #db1;
+$color-red: #f01;
+$color-white: #fff;
+
+@mixin theme($theme: #000) {
+  background-color: $theme;
+  color: #fff;
+}
+@mixin alertTheme($color: #28e667) {
+  background-color: $color;
+  color: $color-white;
+  padding: 10px;
+  border: 1px solid $bg-div;
+  border-radius: 10px;
+}
 
 * {
-  font-family: "Helvetica";
+  font-family: Helvetica;
 }
 
 body {
@@ -10,4 +25,25 @@ body {
 }
 div {
   color: $bg-div;
+  font-family: Arial;
+}
+h1 {
+  font-size: 23px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alerta-success{
+  @include alertTheme;
+}
+.alerta-warning{
+  @include alertTheme($color: #ffc107);
+}
+.alerta-error{
+  @include alertTheme($color: #0099ff);
+}
+.alerta-info{
+  @include alertTheme($color: #ff07f3);
 }

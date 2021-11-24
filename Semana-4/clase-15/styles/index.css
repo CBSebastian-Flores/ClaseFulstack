@@ -1,5 +1,5 @@
 * {
-  font-family: "Helvetica";
+  font-family: Helvetica;
 }
 
 body {
@@ -8,5 +8,51 @@ body {
 
 div {
   color: #db1;
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.alerta-success {
+  background-color: #28e667;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #db1;
+  border-radius: 10px;
+}
+
+.alerta-warning {
+  background-color: #ffc107;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #db1;
+  border-radius: 10px;
+}
+
+.alerta-error {
+  background-color: #0099ff;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #db1;
+  border-radius: 10px;
+}
+
+.alerta-info {
+  background-color: #ff07f3;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #db1;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=index.css.map */
